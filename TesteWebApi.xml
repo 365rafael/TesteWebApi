@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TesteWebApi</name>
+    </assembly>
+    <members>
+        <member name="M:TesteWebApi.Controllers.CategoriaController.BuscarTodasCategorias">
+            <summary>
+            Lista todas as categorias salvas no banco de dados.
+            </summary>
+        </member>
+        <member name="M:TesteWebApi.Controllers.CategoriaController.BuscarPorId(System.Int32)">
+            <summary>
+            Busca a categoria pelo id.
+            </summary>
+        </member>
+        <member name="M:TesteWebApi.Controllers.CategoriaController.Adicionar(TesteWebApi.Models.Categoria)">
+            <summary>
+            Cria uma nova categoria no banco de dados.
+            </summary>
+        </member>
+        <member name="M:TesteWebApi.Controllers.CategoriaController.Atualizar(TesteWebApi.Models.Categoria,System.Int32)">
+            <summary>
+            Atualiza os dados da categoria, buscando pelo id.
+            </summary>
+        </member>
+        <member name="M:TesteWebApi.Controllers.CategoriaController.Apagar(System.Int32)">
+            <summary>
+            Deleta a categoria, buscando pelo id.
+            </summary>
+        </member>
+        <member name="M:TesteWebApi.Controllers.ProdutoController.BuscarTodosProdutos">
+            <summary>
+            Lista todos os produtos cadastrados no banco.
+            </summary> 
+        </member>
+        <member name="M:TesteWebApi.Controllers.ProdutoController.BuscarCategoriasComProdutosAtivos">
+            <summary>
+            Lista as categorias com produto cadastrado no banco.
+            </summary> 
+        </member>
+        <member name="M:TesteWebApi.Controllers.ProdutoController.BuscarPorId(System.Int32)">
+            <summary>
+            Lista o produto cadastrado no banco pelo id.
+            </summary> 
+        </member>
+        <member name="M:TesteWebApi.Controllers.ProdutoController.BuscarPorUrl(System.String)">
+            <summary>
+            Lista o produto cadastrado no banco pela url.
+            </summary>
+        </member>
+        <member name="M:TesteWebApi.Controllers.ProdutoController.BuscarProdutosPorCategoria(System.Int32)">
+            <summary>
+            Lista os produtos cadastrados no banco pelo id da sua categoria.
+            </summary>
+        </member>
+        <member name="M:TesteWebApi.Controllers.ProdutoController.BuscarProdutosPorCategoriaUrl(System.String)">
+            <summary>
+            Lista os produtos cadastrados no banco pela url da sua categoria.
+            </summary>
+        </member>
+        <member name="M:TesteWebApi.Controllers.ProdutoController.Adicionar(TesteWebApi.Models.Produto)">
+            <summary>
+            Cadastra um novo produto.
+            </summary>
+        </member>
+        <member name="M:TesteWebApi.Controllers.ProdutoController.Atualizar(TesteWebApi.Models.Produto,System.Int32)">
+            <summary>
+            Atualiza um produto, buscando pelo id.
+            </summary>
+        </member>
+        <member name="M:TesteWebApi.Controllers.ProdutoController.Apagar(System.Int32)">
+            <summary>
+            Deleta um produto, buscando pelo id.
+            </summary>
+        </member>
+        <member name="M:TesteWebApi.Controllers.UsuarioController.BuscarTodosUsuarios">
+            <summary>
+            Lista todos os usuários cadastrados no banco de dados.
+            </summary> 
+        </member>
+        <member name="M:TesteWebApi.Controllers.UsuarioController.BuscarPorId(System.Int32)">
+            <summary>
+            Lista o usuário pelo seu id.
+            </summary> 
+        </member>
+        <member name="M:TesteWebApi.Controllers.UsuarioController.Cadastrar(TesteWebApi.Models.Usuario)">
+            <summary>
+            Cadastra um novo usuário no banco de dados.
+            </summary> 
+        </member>
+        <member name="M:TesteWebApi.Controllers.UsuarioController.Atualizar(TesteWebApi.Models.Usuario,System.Int32)">
+            <summary>
+            Atualiza um cadastro de usuário, buscando pelo id.
+            </summary> 
+        </member>
+        <member name="M:TesteWebApi.Controllers.UsuarioController.Apagar(System.Int32)">
+            <summary>
+            Deleta um cadastro de usuário, buscando pelo id.
+            </summary>
+        </member>
+        <member name="M:TesteWebApi.Controllers.UsuarioController.Verificar(System.String,System.String)">
+            <summary>
+            Faz a verificação do usuário pelo email e código de verificação.
+            </summary>
+        </member>
+    </members>
+</doc>
