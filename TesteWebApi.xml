@@ -39,6 +39,16 @@
             Lista todos os pedidos cadastrados no banco de dados.
             </summary> 
         </member>
+        <member name="M:TesteWebApi.Controllers.PedidoController.BuscarPorId(System.Int32)">
+            <summary>
+            Lista o pedido pelo seu id.
+            </summary> 
+        </member>
+        <member name="M:TesteWebApi.Controllers.PedidoController.Apagar(System.Int32)">
+            <summary>
+            Deleta um pedido, buscando pelo id.
+            </summary>
+        </member>
         <member name="M:TesteWebApi.Controllers.ProdutoController.BuscarTodosProdutos">
             <summary>
             Lista todos os produtos cadastrados no banco.
