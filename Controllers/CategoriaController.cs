@@ -34,6 +34,10 @@ namespace TesteWebApi.Controllers
         public async Task<ActionResult<List<Categoria>>> BuscarPorId(int id)
         {
             Categoria categoria = await _categoriaRepositorio.BuscarPorId(id);
+            if (categoria == null)
+            {
+                return NotFound("Categoria não encontrado.");
+            }
             return Ok(categoria);
         }
 

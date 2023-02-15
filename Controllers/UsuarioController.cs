@@ -20,7 +20,7 @@ namespace TesteWebApi.Controllers
         ///Lista todos os usuários cadastrados no banco de dados.
         ///</summary> 
         [HttpGet]
-        public async Task<ActionResult<List<Usuario>>> BuscarTodosUsuarios() 
+        public async Task<ActionResult<List<Usuario>>> BuscarTodosUsuarios()
         {
             List<Usuario> usuarios = await _usuarioRepositorio.BuscarTodosUsuarios();
             return Ok(usuarios);
@@ -33,6 +33,10 @@ namespace TesteWebApi.Controllers
         public async Task<ActionResult<List<Usuario>>> BuscarPorId(int id)
         {
             Usuario usuario = await _usuarioRepositorio.BuscarPorId(id);
+            if (usuario == null)
+            {
+                return NotFound("Usuário não encontrado.");
+            }
             return Ok(usuario);
         }
 
@@ -63,7 +67,7 @@ namespace TesteWebApi.Controllers
         [HttpDelete("{id}")]
         public async Task<ActionResult<Usuario>> Apagar(int id)
         {
-            
+
             bool apagado = await _usuarioRepositorio.Apagar(id);
             return Ok(apagado);
         }

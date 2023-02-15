@@ -10,7 +10,7 @@ namespace TesteWebApi.Repositorios
         private readonly ApplicationDbContext _dbContext;
         public UsuarioRepositorio(ApplicationDbContext applicationDbContext)
         {
-            _dbContext= applicationDbContext;
+            _dbContext = applicationDbContext;
         }
         public async Task<Usuario> BuscarPorId(int id)
         {
@@ -60,10 +60,10 @@ namespace TesteWebApi.Repositorios
             return usuario;
         }
 
-            public async Task<Usuario> Atualizar(Usuario usuario, int id)
+        public async Task<Usuario> Atualizar(Usuario usuario, int id)
         {
             Usuario usuarioPorId = await BuscarPorId(id);
-            if(usuarioPorId == null)
+            if (usuarioPorId == null)
             {
                 throw new Exception($"O usuário para o ID {id} não foi encontrado no banco de dados.");
             }
@@ -91,10 +91,10 @@ namespace TesteWebApi.Repositorios
                 throw new Exception($"O usuário para o ID {id} não foi encontrado no banco de dados.");
             }
             _dbContext.Usuarios.Remove(usuarioPorId);
-           await _dbContext.SaveChangesAsync();
+            await _dbContext.SaveChangesAsync();
             return true;
         }
 
-        
+
     }
 }
