@@ -15,6 +15,11 @@ namespace TesteWebApi.Repositorios
             _context = context;
         }
 
+        public async Task<List<Pedido>> BuscarTodosPedidos()
+        {
+            return await _context.Pedidos.ToListAsync();
+        }
+
         public async Task<(int, string, string, int)> CriarPedidoAsync(int usuarioId, int produtoId, int quantidade)
         {
             var usuario = await _context.Usuarios.FindAsync(usuarioId);

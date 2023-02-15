@@ -29,6 +29,16 @@
             Deleta a categoria, buscando pelo id.
             </summary>
         </member>
+        <member name="M:TesteWebApi.Controllers.PedidoController.CriarPedido(System.Int32,TesteWebApi.Context.DTO.CriarPedidoDto)">
+            <summary>
+            Adiciona um novo pedido ao banco de dados.
+            </summary> 
+        </member>
+        <member name="M:TesteWebApi.Controllers.PedidoController.BuscarTodosPedidos">
+            <summary>
+            Lista todos os pedidos cadastrados no banco de dados.
+            </summary> 
+        </member>
         <member name="M:TesteWebApi.Controllers.ProdutoController.BuscarTodosProdutos">
             <summary>
             Lista todos os produtos cadastrados no banco.
